@@ -1,0 +1,8 @@
+{
+  "name": "js-curry-assignment-1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/DavidHerrin/js-curry-assignment-1.git",
+  "author": "David Herrin <david_herrin@hotmail.com>",
+  "license": "MIT"
+}

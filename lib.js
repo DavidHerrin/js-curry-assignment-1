@@ -25,7 +25,24 @@ const listedPrice =
 const calculateTotals =
   listings =>
     carts => {
-      // TODO
+      const retArray = []
+
+      for (let cart of carts) {
+        const custTotalArray = { customer: cart.customer }
+        let total = 0
+
+        for (let item of cart.items) {
+          for (let listing of listings) {
+            if (listing.name === item) {
+              total += listing.price
+            }
+          }
+        }
+
+        custTotalArray.total = total
+        retArray.push(custTotalArray)
+      }
+      return retArray
     }
 
 module.exports = {
